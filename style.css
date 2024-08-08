@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    outline: 5px solid grey;
+    background-color: aliceblue;
+    height: 5rem;
+}
+
+.titlebar {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-img {
+    height: 80%;
+    margin-left: 1rem;
+}
+
+.title {
+    font-size: 1rem;
+}
+
+.menu-bar {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    height: 50%;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-btn {
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: rgb(118, 121, 121);
+}
+
+.menu-items {
+    display: none;
+    background-color: aliceblue;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+
+    padding: 0;
+    width: 9rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn:hover + .menu-items,
+.menu-items:hover {
+    display: block;
+}
+
+
+.menu-items li {
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    background-color: lightgray;
+}
+.videoInput{
+    display: none;
+}
+
+main {
+    background-color: black;
+    height: calc(100vh - 8rem); /* Added spaces around the minus sign */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    height: 100%;
+}
+
+.toast{
+    position: fixed;
+    color: aliceblue;
+    font-size: 2rem;
+    top:80px;
+    right: 47px;
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    padding: 20px; 
+    background-color: #282c34; 
+    border-top: 2px solid #444; 
+
+footer i {
+    font-size: 24px; 
+    color: #61dafb; 
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+footer i:hover {
+    transform: scale(1.2); 
+    color: #21a1f1;
+}
+
+footer i#pause:hover {
+    color: #f44336;
+}
+
+footer i#play:hover {
+    color: #4caf50; 
+}
+
+footer i#fullScreen:hover {
+    color: #ffeb3b;
+}
+
+}
